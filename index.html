@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +7,9 @@
   <title>KGXperience | Innovation Cell</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <!--Replace with your tailwind.css once created-->
-  <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/assets/images/logos/kgx_logo_black.png" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="css/index.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c55e24ad37.js" crossorigin="anonymous"></script>
   <style>
@@ -23,16 +22,19 @@
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
+<body class="leading-normal tracking-normal text-indigo-400 "><!--font-JetBrainsMono-->
   <div class="h-full">
     <!--Nav-->
-    <nav class="border-gray-200 dark:bg-gray-900">
+    <nav class="border-gray-200">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="Images/logos/kgx_white-logo.svg" class="h-8 lg:h-10" alt="kgx-logo" />
+          <div class="flex justify-center items-center flex-col logo_hero_wrap">
+            <img src="/assets/images/logos/kgx_white-logo.svg" class="hero_logo h-8 lg:h-10" alt="kgx-logo" />
+            <p class="hero_logo_text ">KGXperience</p>
+          </div>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <img src="Images/logos/KGISL EDU FINAL TRANSPARENT LOGO.png" class="w-20 hidden md:block lg:block" alt="kgisl-logo" />
+          <img src="/assets/images/logos/White KG Edu Logo.png" class="w-20 hidden md:block lg:block" alt="kgisl-logo" />
           <button data-collapse-toggle="navbar-cta" type="button"
             class="navbar-burger inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-cta" aria-expanded="false">
@@ -50,13 +52,19 @@
               <a href="#" class="block py-2 px-3 md:p-0 text-white hover:text-blue-700" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">About</a>
+              <a href="#about" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">About</a>
+            </li>
+            <li>
+              <a href="team.html" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">Team</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">Achivements</a>
             </li>
             <li>
               <a href="#" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">Services</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">Contact</a>
+              <a href="#contact" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">Contact</a>
             </li>
           </ul>
         </div>
@@ -78,27 +86,28 @@
             </li>
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                href="#">About Us</a>
+                href="#about">About Us</a>
             </li>
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">Services</a>
             </li>
-            <li class="mb-1">
+            <!-- <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">Pricing</a>
-            </li>
+            </li> -->
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                href="#">Contact</a>
+                href="#contact">Contact</a>
             </li>
 
           </ul>
           
         </div>
         <div class="flex justify-center items-end h-full">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="Images/logos/KGISL EDU FINAL TRANSPARENT LOGO.png" class="w-20" alt="kgx-logo" />
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse gap-6">
+            <img src="/assets/images/logos/kgx_white-logo.svg" alt="KGX logo" class="h-10">
+            <img src="/assets/images/logos/White KG Edu Logo.png" class="w-20" alt="kgedu-logo" />
           </a>
         </div>
        
@@ -117,12 +126,12 @@
       <!-- Jumbotron -->
       <!-- IDX alike hero -->
       <div>
-        <h1 class="header">
-          What if your dev experience was
+        <h1 class="header text-5xl">
+          Empowering Innovation, Shaping Tomorrow
         </h1>
         <table class="fancy-table">
           <tr>
-            <td>
+            <td class="bg-td">
               A
             </td>
             <td>
@@ -263,36 +272,36 @@
       <!-- scroll down -->
 
       <!-- About us -->
-      <section class="flex items-center py-8 font-poppins dark:bg-gray-800 " id="about">
+      <section class="flex items-center py-8 font-poppins" id="about">
         <div class="justify-center flex-1 max-w-7xl px-4 py-4 mx-auto lg:py-6 md:px-3">
           <div class="flex flex-wrap items-center">
             <div class="w-full px-4 mb-10 xl:w-1/2 lg:mb-8">
               <div class="flex flex-wrap">
                 <div class="w-full px-4 md:w-1/2">
-                  <img src="https://i.postimg.cc/YCJW7jv8/pexels-fauxels-3184357.jpg" alt=""
+                  <img src="/assets/images/Artificial_Intellience_Brain.jpg" alt="AI_img"
                     class="object-cover w-full mb-6 rounded-lg h-80">
-                  <img src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg" alt=""
+                  <img src="/assets/images/Autonomous_Vehcile.jpg" alt="Automation_Vehicle"
                     class="object-cover w-full rounded-lg h-80">
                 </div>
                 <div class="w-full px-4 md:w-1/2 xl:mt-11">
-                  <img src="https://i.postimg.cc/sXJQ5cw0/pexels-pixabay-256455-1.jpg" alt=""
+                  <img src="/assets/images/Embedded_Systems.jpg" alt="Embedded_Systems_img"
                     class="object-cover w-full mb-6 rounded-lg h-80">
-                  <img src="https://i.postimg.cc/vHTg6593/aqq.jpg" alt="" class="object-cover w-full rounded-lg h-80">
+                  <img src="/assets/images/Dev_guy.jpg" alt="Dev_guy_img" class="object-cover w-full rounded-lg h-80">
                 </div>
               </div>
             </div>
             <div class="w-full px-4 mb-10 xl:w-1/2 lg:mb-8">
-              <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">Why choose us</h1>
-              <p class="text-xl text-gray-100 md:text-center md:text-2xl">
+              <h1 class="mb-9 text-3xl font-semibold text-white md:text-center md:text-5xl">Why choose us</h1>
+              <!-- <p class="text-xl text-gray-100 md:text-center md:text-2xl mb-4">
                 We are providing a better facility
-              </p>
-              <p class="mb-4 mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
+              </p> -->
+              <!-- <p class="mb-4 mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
+              </p> -->
               <ul class="mb-10">
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-1-circle-fill" viewBox="0 0 16 16">
@@ -302,7 +311,7 @@
                   </span>
                   We believe the power of like-minded individuals is immense. By focusing on deep tech, we not only solve problems but also empower our community through knowledge.
                 </li>
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-2-circle-fill" viewBox="0 0 16 16">
@@ -312,7 +321,7 @@
                   </span>
                   Shared Vision, Shared Success: Unity, integrity, and collaboration define our approach to achieving common goals and fostering innovation.
                 </li>
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-3-circle-fill" viewBox="0 0 16 16">
@@ -322,7 +331,7 @@
                   </span>
                   Catalyst for Change: Nurturing talent, forging paths in innovation, and shaping the future through our dedicated commitment to excellence.
                 </li>
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-4-circle-fill" viewBox="0 0 16 16">
@@ -356,7 +365,7 @@
                   clip-rule="evenodd"></path>
               </svg> -->
             <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">Our Work</h1>
-             <p class="text-xl text-gray-100 md:text-center md:text-2xl">We have built many products and some of them are below</p>
+             <p class="text-xl text-gray-100 md:text-center md:text-2xl">Explore Our Areas Of Expertise And Initiative</p>
           </div>
           <div class="mt-16 grid gap-6 overflow-hidden text-gray-600 sm:grid-cols-2 lg:grid-cols-3">
             <div
@@ -365,8 +374,8 @@
                 <img src="https://www.svgrepo.com/show/164986/logo.svg" loading="lazy" width="200" height="200"
                   class="w-12 h-12 rounded-full" style="color:transparent">
                 <div class="space-y-2">
-                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">Xyz.com</h5>
-                  <p class="text-gray-300">Platform to convert Domains into Content websites.</p>
+                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">AI/ML</h5>
+                  <p class="text-gray-300">Where Data Meets Discovery: Our AI/ML Journey</p>
                 </div>
               </div>
             </div>
@@ -376,8 +385,9 @@
                 <img src="https://www.svgrepo.com/show/120853/logo.svg" loading="lazy" width="200" height="200"
                   class="w-12 h-12 rounded-full" style="color:transparent">
                 <div class="space-y-2">
-                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">ABC.com</h5>
-                  <p class="text-gray-300">Platform to create dynamic widgets for websites.</p>
+                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">IOT</h5>
+                  <p class="text-gray-300">Where Devices Speak:
+                    Our Work</p>
                 </div>
               </div>
             </div>
@@ -387,8 +397,8 @@
                 <img src="https://www.svgrepo.com/show/120852/logo.svg" loading="lazy" width="200" height="200"
                   class="w-12 h-12 rounded-full" style="color:transparent">
                 <div class="space-y-2">
-                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">ASD.com</h5>
-                  <p class="text-gray-300">API SaaS Platform that provides API Suit to help you ship fast.</p>
+                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">SOFTWARE DEVELOPMENT</h5>
+                  <p class="text-gray-300">Transforming Ideas into Digital Realities</p>
                 </div>
               </div>
             </div>
@@ -398,8 +408,8 @@
                 <img src="https://www.svgrepo.com/show/120850/logo.svg" loading="lazy" width="200" height="200"
                   class="w-12 h-12 rounded-full" style="color:transparent">
                 <div class="space-y-2">
-                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">TMK.co</h5>
-                  <p class="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
+                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">ROBOTICS</h5>
+                  <p class="text-gray-300">Redefining Automation with Robotic Excellence</p>
                 </div>
               </div>
             </div>
@@ -431,8 +441,8 @@
                 <img src="https://www.svgrepo.com/show/120850/logo.svg" loading="lazy" width="200" height="200"
                   class="w-12 h-12 rounded-full" style="color:transparent">
                 <div class="space-y-2">
-                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">TMK.co</h5>
-                  <p class="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
+                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">UI/UX</h5>
+                  <p class="text-gray-300">Creating Memorable User Experiences</p>
                 </div>
               </div>
             </div>
@@ -442,19 +452,48 @@
                 <img src="https://www.svgrepo.com/show/120850/logo.svg" loading="lazy" width="200" height="200"
                   class="w-12 h-12 rounded-full" style="color:transparent">
                 <div class="space-y-2">
-                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">TMK.co</h5>
-                  <p class="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
+                  <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">AUTONOMOUS VECHILE</h5>
+                  <p class="text-gray-300">Navigating Autonomy: Building the Road to Innovation</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+
+          <!-- Number Loop Starts -->
+
+          
+          <section id="impacts" class="my-alert">
+            <div class="my-alert__unique1">
+              • Impacts
+            </div>
+            <div class="my-alert__unique2" id="loops">
+              <div class="media950">
+              <p class="my-alert__unique_h">250<sup>+</sup></p>
+              <p class="my-alert__unique_s">Student Innovator</p>
+              </div>
+              <a href=""></a>
+              <div class="media950">
+              <p class="my-alert__unique_h">20<sup>+</sup></p>
+              <p class="my-alert__unique_s">Hackathons</p>
+              </div>
+              <a href=""></a>
+              <div class="media950">
+              <p class="my-alert__unique_h">15<sup>+</sup></p>
+              <p class="my-alert__unique_s">Innovation Mentors</p>
+              </div>
+              <a href=""></a>
+              <div class="media950">
+              <p class="my-alert__unique_h">5<sup>+</sup></p>
+              <p class="my-alert__unique_s">Collaboration</p>
+              </div>
+          </div>
+          </section>
+      
       <!-- End Technology -->
 
       <!-- Team -->
 
-      <section class="py-8 max-w-7xl mx-auto w-full py-8">
+      <section class="max-w-7xl mx-auto w-full py-8 overflow-hidden" id="team">
         <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
           <div class="mb-12 space-y-5 md:mb-16 md:text-center">
             <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
@@ -467,7 +506,7 @@
         </div>
         <figure class="relative transition-all duration-300 cursor-pointer group ">
           <a href="#">
-            <img class="h-auto grayscale hover:grayscale-0 max-w-full rounded-2xl filter" src="Images/Teams/Team.jpg"
+            <img class="h-auto grayscale hover:grayscale-0 max-w-full rounded-2xl filter" src="/assets/images/Teams/Team.jpg"
               width="100%" alt="image description">
           </a>
           <figcaption class="absolute px-4 text-lg text-white bottom-6">
@@ -663,6 +702,19 @@
             <div class="transition-all duration-200 shadow-lg cursor-pointer bg-gray-800">
               <button type="button" id="question1" data-state="closed"
                 class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                <span class="flex text-lg font-semibold text-white">Who are we?</span>
+                <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" class="w-6 h-6 text-gray-400">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6 text-white">
+                <p class="tracking-wider">We are a community of like-minded individuals bound by a shared passion for technology and an unwavering commitment to solving real-world problems. Rooted in our core values of consistency and quality, and aligned vision, we help the student community become better innovators.</p>
+              </div>
+            </div>
+            <div class="transition-all duration-200 shadow-lg cursor-pointer bg-gray-800">
+              <button type="button" id="question1" data-state="closed"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
                 <span class="flex text-lg font-semibold text-white">How can I get started?</span>
                 <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" class="w-6 h-6 text-gray-400">
@@ -670,7 +722,7 @@
                 </svg>
               </button>
               <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6 text-white">
-                <p>Getting started is easy! Sign up for an account, and you'll have access to our platform's
+                <p class="tracking-wider">Getting started is easy! Sign up for an account, and you'll have access to our platform's
                   features. No credit card required for the initial signup.</p>
               </div>
             </div>
@@ -684,7 +736,7 @@
                 </svg>
               </button>
               <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6 text-white">
-                <p>Getting started is easy! Sign up for an account, and you'll have access to our platform's
+                <p class="tracking-wider">Getting started is easy! Sign up for an account, and you'll have access to our platform's
                   features. No credit card required for the initial signup.</p>
               </div>
             </div>
@@ -698,32 +750,20 @@
                 </svg>
               </button>
               <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6 text-white">
-                <p>Getting started is easy! Sign up for an account, and you'll have access to our platform's
-                  features. No credit card required for the initial signup.</p>
-              </div>
-            </div>
-            <div class="transition-all duration-200 shadow-lg cursor-pointer bg-gray-800">
-              <button type="button" id="question1" data-state="closed"
-                class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                <span class="flex text-lg font-semibold text-white">How can I get started?</span>
-                <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" class="w-6 h-6 text-gray-400">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6 text-white">
-                <p>Getting started is easy! Sign up for an account, and you'll have access to our platform's
+                <p class="tracking-wider">Getting started is easy! Sign up for an account, and you'll have access to our platform's
                   features. No credit card required for the initial signup.</p>
               </div>
             </div>
           </div>
-          <p class="text-center text-white textbase mt-9">
-            Still have questions?
-            <span
+          <a href="#contact">
+            <p class="text-center text-white textbase mt-9">
+              Still have questions?
+              <span
               class="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline">Contact
               our support
             </span>
           </p>
+          </a>
         </div>
       </section>
 
@@ -731,7 +771,7 @@
     
      <!-- Contact us -->
 
-     <section class="text-gray-400">
+    <section class="text-gray-400" id="contact">
 
       <div class="mx-auto px-5 py-8">
         
@@ -749,26 +789,26 @@
           <div class="-m-2 flex flex-wrap">
     
             <!-- form -->
-            <div class="w-1/2 p-2">
+           <div class="w-1/2 p-2">
               <div class="relative">
                 <input type="text" id="name" name="name" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Name" />
-                <label for="name" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Name</label>
+                <label for="name" class="absolute left-3 -top-7 bg-transparent text-md leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Name</label>
               </div>
             </div>
             <div class="w-1/2 p-2">
               <div class="relative">
                 <input type="email" id="email" name="email" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Email" />
-                <label for="email" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Email</label>
+                <label for="email" class="absolute left-3 -top-7 bg-transparent text-md leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Email</label>
               </div>
             </div>
             <div class="mt-4 w-full p-2">
               <div class="relative">
                 <textarea id="message" name="message" class="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Message"></textarea>
-                <label for="message" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Message</label>
+                <label for="message" class="absolute left-3 -top-7 bg-transparent text-md leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Message</label>
               </div>
             </div>
             <div class="w-full p-2 flex justify-center">
-              <a class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none cursor-pointer" href="mailto:k" target="_blank">Submit</a>
+              <a class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none cursor-pointer" href="mailto:kgx" target="_blank">Submit</a>
             </div>    
           </div>
         </div>
@@ -781,14 +821,14 @@
     
     </main>
     <!--Main-->
-    <!-- Footer -->
+    <!--Footer-->
     <footer>
       <div class="bg-gray-800 py-4 text-gray-400">
         <div class="container px-4 mx-auto">
           <div class="-mx-4 flex flex-wrap justify-between">
             <div class="px-4 my-4 w-full xl:w-1/5">
               <a href="/" class="block w-56 mb-10">
-                <img src="Images/logos/kgx_white-logo.svg" width="220" height="220" alt="">
+                <img src="/assets/images/logos/kgx_white-logo.svg" width="220" height="220" alt="">
               </a>
                 <p class="text-justify">
                 Shared Vision, Shared Success: Unity, integrity, and collaboration define our approach to achieving common goals and fostering innovation.
@@ -800,10 +840,10 @@
                 <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600">Company</h2>
               </div>
               <ul class="leading-8">
-                <li><a href="#" class="hover:text-blue-400">About Us</a></li>
+                <li><a href="#about" class="hover:text-blue-400">About Us</a></li>
                 <li><a href="#" class="hover:text-blue-400">Terms &amp; Conditions</a></li>
                 <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
-                <li><a href="#" class="hover:text-blue-400">Contact Us</a></li>
+                <li><a href="#contact" class="hover:text-blue-400">Contact Us</a></li>
               </ul>
             </div>
             <div class="px-4 my-4 w-full sm:w-auto">
@@ -856,8 +896,8 @@
           <div class="flex flex-wrap justify-between">
             <div class="px-4 w-full text-center sm:w-auto sm:text-left">
               Copyright © 2020
-              <script>new Date().getFullYear() > 2020 && document.write("- " + new Date().getFullYear())</script>- 2022
-              Tailwindow. All Rights Reserved.
+              <script>new Date().getFullYear() > 2020 && document.write("- " + new Date().getFullYear())</script>
+              KGXperience. All Rights Reserved.
             </div>
             <div class="px-4 w-full text-center sm:w-auto sm:text-left">
               Made with ❤️ by KGXperience.
@@ -872,7 +912,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-  <script src="js/index.js"></script>
+  <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
